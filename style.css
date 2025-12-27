@@ -1,0 +1,173 @@
+/* WARNA UTAMA */
+:root {
+    --primary-color: #ff4b4b;
+    --secondary-color: #ff6b6b;
+    --accent-color: #ff8787;
+    --dark-red: #cc3d3d;
+    --light-red: #ffe5e5;
+    --lighter-red: #fff5f5;
+}
+
+/* BUTTONS */
+.stButton button {
+    background-color: #ff4b4b !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 10px !important;
+    font-weight: 600 !important;
+    padding: 0.5rem 1rem !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(255, 75, 75, 0.3) !important;
+}
+
+.stButton button:hover {
+    background-color: #cc3d3d !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 75, 75, 0.5) !important;
+}
+
+/* DOWNLOAD BUTTON */
+.stDownloadButton button {
+    background-color: #ff6b6b !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 10px !important;
+    font-weight: 600 !important;
+    padding: 0.5rem 1rem !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(255, 107, 107, 0.3) !important;
+}
+
+.stDownloadButton button:hover {
+    background-color: #ff4b4b !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 75, 75, 0.5) !important;
+}
+
+/* RADIO BUTTON MENU NAVIGATION */
+div[role="radiogroup"] label {
+    padding: 10px 15px !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+
+div[role="radiogroup"] label:hover {
+    background-color: #ff4b4b !important;
+}
+
+/* INFO & ALERT BOXES */
+.stAlert {
+    background-color: #ffe5e5 !important;
+    border-left: 5px solid #ff4b4b !important;
+    border-radius: 10px !important;
+    color: #cc3d3d !important;
+}
+
+[data-testid="stSuccess"] {
+    background-color: #ffe5e5 !important;
+    border-left: 5px solid #ff4b4b !important;
+    border-radius: 10px !important;
+    color: #cc3d3d !important;
+}
+
+.stAlert p, .stAlert li {
+    color: #262730 !important;
+}
+
+[data-testid="stSuccess"] p, [data-testid="stSuccess"] li {
+    color: #262730 !important;
+}
+
+.stAlert h3, .stAlert h4 {
+    color: #ff4b4b !important;
+}
+
+[data-testid="stSuccess"] h3, [data-testid="stSuccess"] h4 {
+    color: #ff4b4b !important;
+}
+
+/* TABS */ 
+.stTabs [data-baseweb="tab-list"] {
+    gap: 10px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background-color: #ffe5e5 !important;
+    color: #ff4b4b !important;
+    border-radius: 10px 10px 0 0 !important;
+    font-weight: 600 !important;
+    padding: 12px 24px !important;
+    transition: all 0.3s ease !important;
+}
+
+.stTabs [data-baseweb="tab"]:hover {
+    background-color: #ff8787 !important;
+    color: white !important;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #ff4b4b !important;
+    color: white !important;
+    box-shadow: 0 -2px 8px rgba(255, 75, 75, 0.3) !important;
+}
+
+/* METRIC CARD */
+[data-testid="stMetricValue"] {
+    color: #ff4b4b !important;
+    font-weight: 700 !important;
+    font-size: 2rem !important;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #666 !important;
+    font-weight: 600 !important;
+}
+
+/* HEADERS */
+h1 {
+    color: #ff4b4b !important;
+    font-weight: 800 !important;
+}
+
+h2, h3 {
+    color: #ff4b4b !important;
+    font-weight: 700 !important;
+}
+
+/* DIVIDER */
+hr {
+    border-color: #ff8787 !important;
+    border-width: 2px !important;
+    margin: 1.5rem 0 !important;
+}
+
+/* IMAGE STYLING */
+[data-testid="stImage"] {
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* MARKDOWN LISTS */
+.stMarkdown ul li::marker {
+    color: #ff4b4b !important;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.stMarkdown, .stImage, .stMetric {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
